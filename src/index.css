@@ -1,0 +1,31 @@
+:root { font-family: system-ui, Arial, sans-serif; }
+body { margin: 0; background: #f6f7fb; color: #111; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 16px; }
+.card { background: white; border: 1px solid #e9e9ef; border-radius: 14px; padding: 16px; }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.grid { display: grid; gap: 12px; }
+.grid2 { display: grid; gap: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 850px) { .grid2 { grid-template-columns: 1fr; } }
+
+.gridProducts { margin-top: 12px; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+
+.muted { color: #555; }
+.badge { border: 1px solid #111; border-radius: 999px; padding: 4px 10px; font-size: 12px; }
+
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { border-bottom: 1px solid #eee; padding: 10px; text-align: left; vertical-align: top; }
+
+input, select, button { padding: 10px; border-radius: 10px; border: 1px solid #ddd; }
+button { cursor: pointer; background: #fff; }
+
+.btn { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; padding: 10px 12px; border-radius: 10px; border: 1px solid #111; color: #111; background: #fff; }
+.btnDark { padding: 10px 12px; border-radius: 10px; border: 1px solid #111; color: #fff; background: #111; }
+
+.header { position: sticky; top: 0; z-index: 10; background: #ffffffcc; backdrop-filter: blur(8px); border-bottom: 1px solid #eee; }
+.banner { background: #fff; border-bottom: 1px solid #eee; }
+.space { justify-content: space-between; }
+
+.nav { text-decoration: none; padding: 8px 12px; border-radius: 999px; border: 1px solid #111; color: #111; }
+.navActive { background: #111; color: #fff; }
+code { background: #f1f1f1; padding: 2px 6px; border-radius: 6px; }
